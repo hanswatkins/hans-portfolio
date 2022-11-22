@@ -13,6 +13,8 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="home.css" />
+		<link rel="icon" type="image" href="/icon.png" />
+		
 		<style>
 			.section {
 				font-family: Arial, Helvetica, sans-serif;
@@ -20,9 +22,14 @@
 				color: #f1e7db;
 			}
 		</style>
-		<title>Document</title>
+		<title>Hans Watkins</title>
 	</head>
 	<body>
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="name" />
+			<input type="email" name="email" />
+			<textarea name="message"></textarea>
+		  </form>
 		<div id="fullpage">
 			<div class="section">
 				<p class="test-title">Hi, I'm Hans Watkins.</p>
@@ -282,7 +289,79 @@
 					</div>
 				</div>
 			</div>
-		</div>
+			
+				<div class="section">
+					<div class="columns">
+						<div class="column"></div>
+						<div class="column">
+							<h2 class='title is-size-1 is-size-2-mobile' style="text-align: center;">Get in touch.</h2>
+						</div>
+						<div class="column"></div>
+					</div>
+						
+									<div class="columns">
+										<div class="column"></div>
+										<div class="column">
+											<div class='card2'>
+												<div class='card-content'>
+													<form name='contact' method='post'>
+														<input
+															class='input'
+															type='hidden'
+															name='form-name'
+															value='contact'
+														/>
+													<label class='label' htmlFor='name'>
+														Name
+													</label>
+														<br />
+														<input
+															class='input is-info'
+															type='text'
+															id='name'
+															name='name'
+															placeholder='Your name'
+															required
+														/>
+													<label hidden class='label' htmlFor='email'>
+														Email
+													</label>
+														<br />
+														<input
+															class='input is-info'
+															type='email'
+															id='email'
+															name='email'
+															placeholder='Email address'
+															required
+														/>
+													<label class='label' htmlFor='message'>
+														Message
+													</label>
+														<br />
+														<textarea
+															class='textarea is-info'
+															id='message'
+															name='message'
+															placeholder="What's up?"
+															required
+														></textarea>
+													<div class='field'>
+															<p class='control mt-3 mb-2'>
+																<button class='button is-info'>
+																	Send <i class='fa-solid fa-paper-plane'></i>
+																</button>
+															</p>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="column"></div>
+									</div>
+					</div>
+				
+
 		<script src="./fullpage.dropEffect.min.js"></script>
 		<script src="https://unpkg.com/fullpage.js/dist/fullpage.extensions.min.js"></script>
 
@@ -291,12 +370,12 @@
 				// Navigation
 				menu: '#menu',
 				lockAnchors: false,
-				anchors: ['home', 'about', 'about2', 'projects', 'contact'],
+				anchors: ['homepage', 'aboutpage', 'about2page', 'projectspage', 'contactpage'],
 				navigation: false,
 				navigationPosition: 'right',
-				navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],
+				navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
 				showActiveTooltip: false,
-				slidesNavigation: false,
+				slidesNavigation: true,
 				slidesNavPosition: 'bottom',
 
 				// Scrolling
@@ -338,7 +417,7 @@
 					'<div class="fp-arrow"></div>',
 				],
 				verticalCentered: true,
-				sectionsColor: ['#FADA5E', '#FF7A41', '#F82F4D', '#fafafa'],
+				sectionsColor: ['#F3CA40', '#33658A', '#F2B84B', '#D95E32', '#D95E32'],
 				paddingTop: '3em',
 				paddingBottom: '10px',
 				fixedElements: '#header, .footer',
@@ -352,7 +431,8 @@
 					property: 'translate',
 				},
 				dropEffect: true,
-				dropEffectOptions: { speed: 2300, color: '#609bff', zIndex: 9999 },
+				dropEffectOptions: { speed: 1600, color: '#609bff', zIndex: 9999 },
+				dropEffectKey: 'NTRhR0Z1YzNkaGRHdHBibk11WTI5dEFqXzdBaFpISnZjRVZtWm1WamRBPT02U0M=',
 				waterEffect: false,
 				waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
 				cards: false,
