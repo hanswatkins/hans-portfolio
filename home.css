@@ -30,14 +30,14 @@
 	font-size: 8vw;
 	font-family: InterExtraBold;
 	color: transparent;
-	-webkit-text-stroke: 2px #f1e7db;
+	-webkit-text-stroke: 1px #f1e7db;
 }
 
 .title2 {
 	font-size: 8vw;
 	font-family: InterExtraBold;
 	color: transparent;
-	-webkit-text-stroke: 2px #f1e7db;
+	-webkit-text-stroke: 1px #f1e7db;
 	margin-top: 1rem;
 }
 
@@ -193,7 +193,7 @@ label {
 }
 @media screen and (min-width: 375px) {
 	.card {
-		margin-top: 10vh;
+		margin-top: 12vh;
 		width: 250px;
 		background-color: #ffffff;
 	}
