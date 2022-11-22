@@ -1,0 +1,198 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+@font-face {
+	font-family: InterRegular;
+	src: url('/fonts/Inter-Regular.woff2');
+}
+@font-face {
+	font-family: InterBold;
+	src: url('/fonts/Inter-Bold.woff2');
+}
+@font-face {
+	font-family: InterExtraBold;
+	src: url('/fonts/Inter-ExtraBold.woff2');
+}
+
+.test-title {
+	font-size: 8vw;
+	font-family: InterExtraBold;
+	color: white;
+}
+
+.test-subtitle {
+	font-size: 4vw;
+	margin: 0px;
+	color: #39393a;
+	font-family: InterBold;
+}
+
+.title {
+	font-size: 8vw;
+	font-family: InterExtraBold;
+	color: transparent;
+	-webkit-text-stroke: 1px #f1e7db;
+}
+
+.title2 {
+	font-size: 8vw;
+	font-family: InterExtraBold;
+	color: transparent;
+	-webkit-text-stroke: 1px #f1e7db;
+	margin-top: 1rem;
+}
+
+.subtitle {
+	font-family: InterBold, Arial, Helvetica, sans-serif;
+	font-size: 4vw;
+	color: #f1e7db;
+}
+
+p.title2 {
+	margin-top: 0rem;
+}
+
+.about-a:hover {
+	font-size: 105%;
+	color: #466362;
+	transition: 0.3s;
+	transform: translateX(2em);
+}
+
+.about-a {
+	transition: 0.3s;
+	color: #f1e7db;
+}
+
+li i .about-a {
+	display: block;
+}
+
+.about-a::before {
+	display: block;
+	font-size: 110%;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: #f1e7db;
+}
+
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+@font-face {
+	font-family: InterRegular;
+	src: url('../fonts/Inter-Regular.woff2');
+}
+@font-face {
+	font-family: InterBold;
+	src: url('../fonts/Inter-Bold.woff2');
+}
+@font-face {
+	font-family: InterExtraBold;
+	src: url('../fonts/Inter-ExtraBold.woff2');
+}
+
+.title {
+	white-space: nowrap;
+}
+
+.projects-title {
+	font-family: InterExtraBold;
+	font-size: 4rem;
+	color: transparent;
+	-webkit-text-stroke: 1px #f1e7db;
+}
+
+.column {
+	padding: 0px;
+}
+
+.content {
+	font-family: InterBold;
+}
+
+p {
+	font-family: InterRegular;
+}
+
+.is-duration-500 {
+	transition-duration: 0.5s;
+}
+
+.transform {
+	-webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0)
+		scaleX(1) scaleY(1);
+	transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1)
+		scaleY(1);
+}
+
+.hover-translate-y:hover {
+	-webkit-transform: translateX(0) translateY(-0.25rem) rotate(0) skewX(0)
+		skewY(0) scaleX(1) scaleY(1) !important;
+	transform: translateX(0) translateY(-0.25rem) rotate(0) skewX(0) skewY(0)
+		scaleX(1) scaleY(1) !important;
+}
+
+.is-cursor-pointer {
+	cursor: pointer !important;
+}
+
+.is-shadow-none {
+	box-shadow: none !important;
+}
+
+.is-showdow-2xl:hover {
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
+		0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.is-img-center {
+	margin: 0 auto;
+}
+
+.card {
+	margin-top: 20vh;
+	width: 550px;
+	border: 5px solid black;
+}
+
+.fp-controlArrow.fp-prev {
+	left: 15px;
+	width: 0;
+	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #000000 transparent transparent;
+}
+.fp-controlArrow.fp-next {
+	right: 15px;
+	border-width: 38.5px 0 38.5px 34px;
+	border-color: transparent transparent transparent #000000;
+}
+
+@media screen and (min-width: 320px) {
+	.card {
+		margin-top: 15vh;
+		width: 230px;
+		background-color: #ffffff;
+	}
+}
+@media screen and (min-width: 375px) {
+	.card {
+		margin-top: 10vh;
+		width: 250px;
+		background-color: #ffffff;
+	}
+}
+@media screen and (min-width: 390px) {
+	.card {
+		margin-top: 14vh;
+		width: 250px;
+		background-color: #ffffff;
+	}
+}
+@media screen and (min-width: 500px) {
+	.card {
+		margin-top: 15vh;
+		width: 390px;
+		background-color: #ffffff;
+	}
+}
