@@ -13,10 +13,21 @@
 	src: url('/fonts/Inter-ExtraBold.woff2');
 }
 
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+
+	0% {
+		opacity: 0;
+	}
+}
+
 .test-title {
 	font-size: 8vw;
 	font-family: InterExtraBold;
 	color: white;
+	animation: fadeIn 3s;
 }
 
 .test-subtitle {
@@ -24,20 +35,18 @@
 	margin: 0px;
 	color: #39393a;
 	font-family: InterBold;
+	animation: fadeIn 5s;
 }
 
 .title {
 	font-size: 8vw;
 	font-family: InterExtraBold;
-	color: transparent;
-	-webkit-text-stroke: 1px #f1e7db;
+	color: #f1e7db;
 }
 
 .title2 {
 	font-size: 8vw;
 	font-family: InterExtraBold;
-	color: transparent;
-	-webkit-text-stroke: 1px #f1e7db;
 	margin-top: 1rem;
 }
 
@@ -75,21 +84,6 @@ li i .about-a {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
 	background: #f1e7db;
-}
-
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
-
-@font-face {
-	font-family: InterRegular;
-	src: url('../fonts/Inter-Regular.woff2');
-}
-@font-face {
-	font-family: InterBold;
-	src: url('../fonts/Inter-Bold.woff2');
-}
-@font-face {
-	font-family: InterExtraBold;
-	src: url('../fonts/Inter-ExtraBold.woff2');
 }
 
 .title {
@@ -186,29 +180,88 @@ label {
 
 @media screen and (min-width: 320px) {
 	.card {
-		margin-top: 15vh;
-		width: 230px;
-		background-color: #ffffff;
+		width: 200px;
+		display: block;
+		margin: 150px auto;
 	}
 }
 @media screen and (min-width: 375px) {
 	.card {
-		margin-top: 12vh;
 		width: 250px;
-		background-color: #ffffff;
+		display: block;
+		margin: 150px auto;
 	}
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 425px) {
 	.card {
-		margin-top: 14vh;
-		width: 250px;
-		background-color: #ffffff;
+		width: 300px;
+		display: block;
+		margin: 130px auto;
 	}
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
 	.card {
-		margin-top: 15vh;
-		width: 390px;
-		background-color: #ffffff;
+		width: 450px;
+		display: block;
+		margin: 70px auto;
 	}
 }
+@media screen and (min-width: 1024px) {
+	.card {
+		width: 500px;
+		display: block;
+		margin: 60px auto;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.card {
+		width: 500px;
+		display: block;
+		margin: 130px auto;
+	}
+}
+@media screen and (min-width: 2560px) {
+	.card {
+		width: 800px;
+		display: block;
+		margin: 250px auto;
+		font-size: 1.5rem;
+		outline: 2px solid black;
+	}
+}
+
+/* @media screen and (min-width: 2560px) {
+	.container {
+		width: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.card {
+		width: 100%;
+	}
+	
+}
+
+@media screen and (min-width: 1440px) {
+
+	.container {
+		width: 500px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+	}
+
+	.slide {
+		margin-bottom: 700px;
+	}
+
+
+	.card {
+		width: 100%;
+	}
+	
+} */
